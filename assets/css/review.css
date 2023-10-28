@@ -1,0 +1,207 @@
+@import './common.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.mainContentsArea {
+  padding-top: 11rem;
+}
+
+
+/* title */
+.titleArea {
+  padding-top: 7rem;
+}
+
+.title {
+  margin-bottom: 4em;
+}
+
+.title p {
+  font-family: 'Nanum Myeongjo' !important;
+  font: var(--color-black);
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
+/* review */
+.reviewArea {
+  padding-top: 8rem;
+}
+
+.listArea {
+  position: relative;
+  margin-top: 4em;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.listArea:nth-child(2) {
+  padding-top: 4em;
+  border-top: 1px solid var(--borderColor1);
+}
+
+.writingBtn {
+  position: absolute;
+  top: -5rem;
+  right: 1rem;
+}
+
+.writingBtn {
+  width: 9rem;
+  height: 4rem;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  background: var(--color-green);
+}
+
+.writingBtn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 38px;
+}
+
+.reviewList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviewItem {
+  margin-bottom: 4em;
+  width: 23%;
+  border: 1px solid var(--borderColor1);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.reviewItem:hover {
+  box-shadow: 15px 15px 30px -5px rgb(0 0 0 / 19%);
+}
+
+.itemTitleImg {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid var(--borderColor1); */
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.reviewItem img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.viewInfo {
+  padding: 0 1.5rem 2rem;
+}
+
+.viewInfo .name {
+  margin-top: 1em;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  font-weight: var(--font-weight-light);
+}
+
+.viewInfo .info {
+  margin-top: 0.7em;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray);
+}
+
+/* paging */
+.paging {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2em 0 4em;
+}
+
+.paging,
+.paging>a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.paging>a.active,
+.paging>a:hover {
+  color: #000;
+}
+
+/* responsive */
+@media all and (max-width: 1200px) {
+
+  /* review */
+  .reviewArea .title {
+    margin-bottom: 0;
+  }
+
+  .reviewList {
+    flex-wrap: wrap;
+  }
+
+  .reviewItem {
+    width: 33%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .reviewItem {
+    width: 49%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .mainContentsArea {
+    padding-top: 8rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .reviewItem {
+    width: 100%;
+  }
+}

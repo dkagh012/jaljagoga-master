@@ -1,0 +1,443 @@
+@import 'reset.css';
+@import 'root.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.nanummyeongjo {
+  font-family: 'Nanum Myeongjo' !important;
+}
+
+/* visual start */
+.visualArea {
+  position: relative;
+  padding-top: 21.5rem;
+}
+
+.visualTitle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  padding: 3em;
+  background: rgba(255, 255, 255, .8);
+}
+
+.visualTitle p {
+  font-family: 'Nanum Myeongjo' !important;
+  color: rgba(0, 0, 0, .8);
+}
+
+.visualTitle p:nth-child(1) {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  margin-bottom: 0.5rem;
+}
+
+.visualTitle p:nth-child(2) {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.visualTitle p:nth-child(3) {
+  margin-top: 0.3em;
+  font-size: 1.65em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.carousel-item img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.slideControlBtnArea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 16rem;
+  height: 7rem;
+  background: rgba(0, 0, 0, .8);
+  z-index: 3;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50%;
+}
+
+
+
+/* item pagination */
+.itemPagination,
+.eventPagination,
+.reviewArea {
+  padding: 7em 0;
+}
+
+.title {
+  margin-bottom: 4em;
+}
+
+.title p {
+  font-family: 'Nanum Myeongjo' !important;
+  font: var(--color-black);
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
+.itemTitleImg {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--borderColor1);
+}
+
+.itemTitleImg img {
+  object-fit: cover;
+}
+
+.itemSwiper .swiper-slide {
+  transition: all 0.7s;
+}
+
+.itemSwiper .swiper-slide:hover {
+  scale: 0.93;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.itemSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.itemInfo .name {
+  margin-top: 1.5em;
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+.itemInfo .tagList {
+  margin-top: 0.2em;
+  flex-wrap: wrap;
+}
+
+.itemInfo .tagList,
+.itemInfo .info,
+.itemInfo .price {
+  color: var(--color-gray);
+  font-weight: var(--font-weight-light);
+}
+
+.itemInfo .tagList {
+  font-size: 1.05em;
+  line-height: 1.05em;
+}
+
+.itemInfo .tagList a {
+  color: #3373a7;
+  font-weight: var(--font-weight-light);
+}
+
+.itemInfo .info {
+  margin-top: 1.2em;
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
+
+.itemInfo .price {
+  margin-top: 1.3em;
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+
+.itemInfo .readMore {
+  position: relative;
+  width: 6em;
+  margin: 1em auto;
+}
+
+.itemInfo .readMore a {
+  display: flex;
+  justify-content: center;
+  padding: 0.95em 0 1em;
+}
+
+.readMore a:before,
+.readMore a:after {
+  content: "";
+  transition: 0.2s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.readMore a:before {
+  right: 0;
+  top: 0;
+}
+
+.readMore a:after {
+  left: 0;
+  bottom: 0;
+}
+
+.readMore a:hover {
+  border: 0;
+}
+
+.readMore a:hover:before,
+.readMore a:hover:after {
+  width: 100%;
+  font-weight: var(--font-weight-bold);
+  background: var(--color-logo);
+}
+
+
+
+/* event pagination */
+.eventPagination {
+  background: var(--color-background-beige);
+}
+
+.eventSwiper {
+  position: relative;
+}
+
+.eventSwiper .itemInfo {
+  width: 30rem;
+}
+
+.eventTitleImg {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  padding-left: 30rem;
+}
+
+.eventTitleImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventInfo {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.eventNavigation {
+  width: 10rem;
+  height: 3rem;
+  background: transparent;
+}
+
+.eventPageCtrBar {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 34%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.eventPageCtrBar,
+.eventPageCtrBar span {
+  color: rgba(0, 0, 0, .5);
+  font-size: 0.8em;
+}
+
+.eventPrev {
+  left: 34%;
+}
+
+.eventPrev,
+.eventNext {
+  color: rgba(0, 0, 0, .8);
+  width: 33%;
+}
+
+.eventPrev:hover,
+.eventNext:hover {
+  color: var(--color-black);
+}
+
+.eventPrev i,
+.eventNext i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* review */
+.listArea {
+  position: relative;
+  margin-top: 4em;
+}
+
+.reviewList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewItem {
+  width: 23%;
+}
+
+.reviewItem img {
+  width: 100%;
+}
+
+.viewInfo .name {
+  margin-top: 1em;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  font-weight: var(--font-weight-light);
+}
+
+.viewInfo .info {
+  margin-top: 0.7em;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  font-weight: var(--font-weight-light);
+  color: var(--color-gray);
+}
+
+@media all and (max-width: 1440px) {
+  .carousel-item img {
+    height: 550px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .eventTitleImg {
+    padding-left: 0;
+  }
+
+  .eventInfo {
+    padding: 2em;
+    background: rgba(255, 255, 255, .8);
+    top: 0;
+  }
+
+  .eventInfo h3 {
+    margin-top: 0 !important;
+  }
+
+  .eventNavigation.slideControlBtnArea {
+    top: 0;
+    left: 210px;
+  }
+
+  /* review */
+  .reviewArea .title {
+    margin-bottom: 0;
+  }
+
+  .listArea {
+    margin-top: 0;
+  }
+
+  .reviewList {
+    flex-wrap: wrap;
+  }
+
+  .reviewItem {
+    width: 49%;
+    margin-top: 4em;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .slideControlBtnArea.aaa {
+    left: 100%;
+    transform: translate(-100%, 0);
+    width: 80px;
+    height: 35px;
+    background: rgba(0, 0, 0, .6);
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .visualTitle {
+    width: 100%;
+    height: 12em;
+    top: 0;
+  }
+
+  .reviewItem {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .visualArea {
+    font-size: 0.7em;
+    padding-top: 8rem;
+  }
+
+  .searchBarContainer {
+    display: none;
+  }
+
+  .eventInfo {
+    width: 100% !important;
+  }
+
+  .eventNavigation.slideControlBtnArea {
+    left: 100%;
+    transform: translate(-100%, 0);
+  }
+}

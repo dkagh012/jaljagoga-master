@@ -1,0 +1,330 @@
+@import 'reset.css';
+@import 'root.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+/* common */
+.hide {
+  display: none;
+}
+
+
+.searchContainer {
+  padding-top: 11rem;
+}
+
+.searchArea {
+  margin: 4rem 0 0;
+  padding: 4rem 0 2rem;
+  border-top: 3px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+}
+
+.FilterArea {
+  display: flex;
+  justify-content: center;
+  gap: 3.5em;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.FilterArea>div {
+  position: relative;
+  gap: 2rem;
+}
+
+.FilterArea>div>button {
+  width: 10em;
+  margin-left: 0.5rem;
+  border: 1px solid var(--borderColor1);
+  border-radius: 5px;
+  background: #fff url(../img/select.png) no-repeat 95% 50%;
+  background-size: 20px 20px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.detailArea {
+  position: absolute;
+  top: calc(100% + 1rem);
+  right: 0;
+  padding: 3rem;
+  background: #fff;
+  border: 1px solid var(--borderColor1);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.detailTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailTitle>p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.detailCloseBtn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: #fff url(../img/close_btn.png) no-repeat 50%;
+  border: 0;
+}
+
+.areaValue {
+  width: 24rem;
+  margin-top: 2.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.areaValue ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3px;
+}
+
+.areaValue ul li {
+  height: 4rem;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.areaValue ul li button {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--borderColor1);
+  background: #fff;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.areaValue ul li button.active {
+  background: #000;
+  color: #fff;
+  /* border: 1px solid #000; */
+  border: 0;
+}
+
+.areaValue>button {
+  width: 10em;
+  margin-top: 1.5rem;
+  border: 1px solid var(--borderColor1);
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.searchBtnArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.searchBtnArea>button {
+  width: 10em;
+  border: 1px solid var(--borderColor1);
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.peopleValue ul li>span {
+  display: inline-block;
+  width: 60%;
+  height: 36px;
+  line-height: 39px;
+  border-top: 1px solid var(--borderColor1);
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.peopleValue ul li>button {
+  width: 20%;
+  height: 36px;
+  font-size: 20px;
+  font-weight: 100;
+  background: #f2f2f2;
+}
+
+.priceValue ul select {
+  height: 30px;
+  padding: 0 0.5rem;
+  border: 1px solid var(--borderColor1);
+  border-radius: 5px;
+}
+
+.itemList {
+  margin-top: 7em;
+}
+
+.itemList>.container {
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.listArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemArea {
+  width: 23%;
+  margin-bottom: 4em;
+}
+
+.itemTitleImg {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--borderColor1);
+}
+
+.itemTitleImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 1em;
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2em;
+  font-size: 1.05em;
+  line-height: 1.05em;
+}
+
+.tagList a {
+  color: #3373a7;
+  font-weight: var(--font-weight-light);
+}
+
+.info {
+  margin-top: 1.2em;
+  font-size: 0.75em;
+  line-height: 0.75em;
+  color: var(--color-gray);
+  font-weight: var(--font-weight-light);
+}
+
+.itemPrice {
+  margin-top: 1.3em;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  color: var(--color-gray);
+  font-weight: var(--font-weight-light);
+}
+
+.paging {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2em 0 4em;
+}
+
+.paging,
+.paging>a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.paging>a.active,
+.paging>a:hover {
+  color: #000;
+}
+
+@media all and (max-width: 1200px) {
+  .FilterArea {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .FilterArea>div {
+    width: 40%;
+  }
+
+  .listArea {
+    flex-wrap: wrap;
+  }
+
+  .itemArea {
+    width: 49%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .searchContainer {
+    padding-top: 8rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .FilterArea>div {
+    width: 100%;
+  }
+
+  .detailArea {
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  .itemArea {
+    width: 100%;
+  }
+}

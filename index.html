@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/xeicon.min.css">
+  <link rel="stylesheet" href="./assets/nanummyeongjo.css">
+  <link rel="stylesheet" href="./assets/css/swiper.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/searchbar.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=6">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>잘자고가</title>
+  <meta name="subject" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta name="keywords" content="잘자고가,고택,숙박,사무실,예약,고택예약" />
+  <meta name="description" content="잘자고가는 고택을 사무실 혹은 숙박시설로 이용하고자 하는 고객들을 위해 다양한 고택의 정보를 제공합니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta property="og:site_name" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta property="og:description" content="잘자고가는 고택을 사무실 혹은 숙박시설로 이용하고자 하는 고객들을 위해 다양한 고택의 정보를 제공합니다." />
+  <meta property="og:image" content="" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./assets/img/favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="headerArea fixed-top">
+    <div class="headerContainer container-fluid p-0">
+      <div class="container">
+        <div class="row">
+          <header>
+            <ul class="headerUl navbar-nav flex-row justify-content-center p-3">
+              <li class="nav-item"><a href="./introduction.html">소개</a></li>
+              <li class="nav-item"><a href="./find_stay.html">고택 소개</a></li>
+              <li class="nav-item">
+                <a href="./index.html">
+                  <img class="logo" src="./assets/img/logo.png" alt="logo">
+                </a>
+              </li>
+              <li class="nav-item"><a href="event.html">이벤트</a></li>
+              <li class="nav-item"><a href="review.html">이용후기</a></li>
+            </ul>
+            <div class="hamburgerMenuBtn">
+              <button><i class="xi-bars xi-2x" style="color: #000;"></i></button>
+            </div>
+            <div class="sideMenuArea hide">
+              <div class="wrapper jsWrapper"></div>
+              <div class="sideMenu">
+                <ul>
+                  <button class="closeBtn hamburgerCloseBtn"></button>
+                  <li class="title"><a href="./introduction.html">소개</a></li>
+                  <li class="title"><a href="./find_stay.html">고택소개</a></li>
+                  <li class="title"><a href="event.html">이벤트</a></li>
+                  <li class="title"><a href="./review.html">이용후기</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="searchBarContainer container-fluid p-0">
+      <div class="container">
+        <div class="row">
+          <div class="filter_category col-11">
+            <div class="searchSlideBtnLeft"><button class="searchSlideBtn"><i
+                  class="xi-angle-left searchPrev"></i></button></div>
+            <ul class="d-flex searchScrollArea">
+              <li><a href="#">전통</a></li>
+              <li><a href="#">자연</a></li>
+              <li><a href="#">도심</a></li>
+              <li><a href="#">독채</a></li>
+              <li><a href="#">노천탕</a></li>
+              <li><a href="#">가족</a></li>
+              <li><a href="#">혼자여행</a></li>
+              <li><a href="#">다이닝</a></li>
+              <li><a href="#">정원</a></li>
+              <li><a href="#">숲</a></li>
+              <li><a href="#">고택</a></li>
+              <li><a href="#">한옥</a></li>
+              <li><a href="#">한적한시골</a></li>
+              <li><a href="#">인기급상승</a></li>
+            </ul>
+            <div class="searchSlideBtnRight"><button class="searchSlideBtn"><i
+                  class="xi-angle-right searchNext"></i></button></div>
+          </div>
+          <!-- search button -->
+          <div class="searchBtn col-1 d-flex justify-content-center align-items-center">
+            <a href="./find_stay.html"><button><i class="xi-search xi-2x" style="color: #000;"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- visual -->
+  <div class="visualArea">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true"
+      data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/4.jpg" class="d-block w-100" alt="visualSlid1">
+          <div class="visualTitle">
+            <p>성곡동</p>
+            <p>편안한 휴식이 있는</p>
+            <p>두릉고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/2.jpg" class="d-block w-100" alt="visualSlid2">
+          <div class="visualTitle">
+            <p>용상동</p>
+            <p>아름다운 경치가 있는</p>
+            <p>송곡고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/3.jpg" class="d-block w-100" alt="visualSlid3">
+          <div class="visualTitle">
+            <p>법흥동</p>
+            <p>새로운 경험이 있는</p>
+            <p>차암고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/1.jpg" class="d-block w-100" alt="visualSlid4">
+          <div class="visualTitle">
+            <p>송현동</p>
+            <p>색다른 체험이 있는</p>
+            <p>죽헌고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/5.jpg" class="d-block w-100" alt="visualSlid1">
+          <div class="visualTitle">
+            <p>성곡동</p>
+            <p>편안한 휴식이 있는</p>
+            <p>두릉고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/6.jpg" class="d-block w-100" alt="visualSlid2">
+          <div class="visualTitle">
+            <p>용상동</p>
+            <p>아름다운 경치가 있는</p>
+            <p>송곡고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/7.jpg" class="d-block w-100" alt="visualSlid3">
+          <div class="visualTitle">
+            <p>법흥동</p>
+            <p>새로운 경험이 있는</p>
+            <p>차암고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/8.jpg" class="d-block w-100" alt="visualSlid4">
+          <div class="visualTitle">
+            <p>송현동</p>
+            <p>색다른 체험이 있는</p>
+            <p>죽헌고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/9.png" class="d-block w-100" alt="visualSlid1">
+          <div class="visualTitle">
+            <p>성곡동</p>
+            <p>편안한 휴식이 있는</p>
+            <p>두릉고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/10.png" class="d-block w-100" alt="visualSlid2">
+          <div class="visualTitle">
+            <p>용상동</p>
+            <p>아름다운 경치가 있는</p>
+            <p>송곡고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/11.png" class="d-block w-100" alt="visualSlid3">
+          <div class="visualTitle">
+            <p>법흥동</p>
+            <p>새로운 경험이 있는</p>
+            <p>차암고택</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/12.png" class="d-block w-100" alt="visualSlid4">
+          <div class="visualTitle">
+            <p>송현동</p>
+            <p>색다른 체험이 있는</p>
+            <p>죽헌고택</p>
+          </div>
+        </div>
+      </div>
+      <div class="slideControlBtnArea aaa">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- item pagination -->
+  <div class="itemPagination">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title text-center">
+            <p>테마별 고택</p>
+          </div>
+          <div class="itemSwiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide itemSlide">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination1.png" alt="구름에"></a>
+                <div class="itemInfo text-center">
+                  <h3 class="name"><a href="#">구름에</a></h3>
+                  <ul class="tagList d-flex gap-2 justify-content-center">
+                    <span><a href="#">#전통</a></span>
+                    <span><a href="#">#자연</a></span>
+                    <span><a href="#">#가족</a></span>
+                    <span><a href="#">#다이닝</a></span>
+                    <span><a href="#">#휴식</a></span>
+                  </ul>
+                  <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                  <p class="price">₩200,000 ~ ₩280,000</p>
+                  <div class="readMore">
+                    <a href="#">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide itemSlide">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination2.png" alt="두릉고택"></a>
+                <div class="itemInfo text-center">
+                  <h3 class="name"><a href="#">두릉고택</a></h3>
+                  <ul class="tagList d-flex gap-2 justify-content-center">
+                    <span><a href="#">#전통</a></span>
+                    <span><a href="#">#자연</a></span>
+                    <span><a href="#">#가족</a></span>
+                    <span><a href="#">#다이닝</a></span>
+                    <span><a href="#">#휴식</a></span>
+                  </ul>
+                  <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                  <p class="price">₩200,000 ~ ₩280,000</p>
+                  <div class="readMore">
+                    <a href="#">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide itemSlide">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination3.png" alt="송곡고택"></a>
+                <div class="itemInfo text-center">
+                  <h3 class="name"><a href="#">송곡고택</a></h3>
+                  <ul class="tagList d-flex gap-2 justify-content-center">
+                    <span><a href="#">#전통</a></span>
+                    <span><a href="#">#자연</a></span>
+                    <span><a href="#">#가족</a></span>
+                    <span><a href="#">#다이닝</a></span>
+                    <span><a href="#">#휴식</a></span>
+                  </ul>
+                  <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                  <p class="price">₩200,000 ~ ₩280,000</p>
+                  <div class="readMore">
+                    <a href="#">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide itemSlide">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination4.png" alt="죽헌고택"></a>
+                <div class="itemInfo text-center">
+                  <h3 class="name"><a href="#">죽헌고택</a></h3>
+                  <ul class="tagList d-flex gap-2 justify-content-center">
+                    <span><a href="#">#전통</a></span>
+                    <span><a href="#">#자연</a></span>
+                    <span><a href="#">#가족</a></span>
+                    <span><a href="#">#다이닝</a></span>
+                    <span><a href="#">#휴식</a></span>
+                  </ul>
+                  <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                  <p class="price">₩200,000 ~ ₩280,000</p>
+                  <div class="readMore">
+                    <a href="#">자세히 보기</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- event pagination -->
+  <div class="eventPagination">
+    <div class="container">
+      <div class="row">
+        <div class="title text-center">
+          <p>이벤트</p>
+        </div>
+        <div class="eventSwiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="eventTitleImg" href="#"><img src="./assets/img/list/고담청사/main.jpg" alt="고담청사"></a>
+              <div class="itemInfo eventInfo">
+                <h3 class="name"><a href="#">고담청사</a></h3>
+                <ul class="tagList d-flex gap-2">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="price">₩200,000 ~ ₩280,000</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a class="eventTitleImg" href="#"><img src="./assets/img/pagination4.png" alt="구름에"></a>
+              <div class="itemInfo eventInfo">
+                <h3 class="name"><a href="#">구름에</a></h3>
+                <ul class="tagList d-flex gap-2">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                  <span><a href="#">#휴식</a></span>
+                  <span><a href="#">#휴식</a></span>
+                  <span><a href="#">#휴식</a></span>
+                  <span><a href="#">#휴식</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="price">₩200,000 ~ ₩280,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="eventNavigation slideControlBtnArea">
+            <div class="eventPageCtrBar swiper-pagination"></div>
+            <button class="eventPrev carousel-control-prev" type="button">
+              <i class="xi-angle-left-min"></i>
+            </button>
+            <button class="eventNext carousel-control-next" type="button">
+              <i class="xi-angle-right-min"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- review -->
+  <div class="reviewArea">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title text-center">
+            <p>이용후기</p>
+          </div>
+          <div class="listArea">
+            <div class="reviewList">
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/2.jpg" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">아름다운 별을 보기에 <br>더없이 좋은</a></h3>
+                  <p class="info">경북 안동시 / 용상동 · 박완규</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">햇살로 맞이하는<br>아침</a></h3>
+                  <p class="info">경북 안동시 / 옥동 · 김수정</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">고풍스러운 다이닝을<br>즐기는 시간</a></h3>
+                  <p class="info">경북 안동시 / 중구동 · 이병건</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">한국적인 무드의<br>공간</a></h3>
+                  <p class="info">경북 안동시 / 평화동 · 주호민</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listArea">
+            <div class="reviewList">
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination1.png" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">소담스런<br>작은 경치</a></h3>
+                  <p class="info">경북 안동시 / 송하동 · 김보석</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination2.png" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">나와 닮아있는 소중한<br>휴식</a></h3>
+                  <p class="info">경북 안동시 / 안기동 · 신웅재</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination3.png" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">햇살로 맞이하는<br>소중한 아침</a></h3>
+                  <p class="info">경북 안동시 / 명륜동 · 이유찬</p>
+                </div>
+              </div>
+              <div class="reviewItem">
+                <a class="itemTitleImg" href="#"><img src="./assets/img/pagination4.png" alt="차암고택"></a>
+                <div class="viewInfo">
+                  <h3 class="name"><a href="#">언제나 나를<br>기다려줄 공간</a></h3>
+                  <p class="info">경북 안동시 / 강남동 · 김준표</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footerContainer">
+    <div class="container">
+      <footer class="row">
+        <div class="footerLogo col-md-2 col-sm-12">
+          <a class="d-flex" href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footerCenterArea col-md-8 col-sm-12">
+          <ul class="d-flex gap-5">
+            <li><a href="#">잘자고가 소개</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <ul class="d-flex gap-3">
+            <li>잘자고가</li>
+            <li>경상북도 안동시 000(0층)</li>
+            <li>고객센터 054-841-0000</li>
+          </ul>
+          <p>© JALJAGOGA. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="snsArea col-md-2 d-flex justify-content-end col-sm-12">
+          <ul class="d-flex gap-3">
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_youtube.svg" alt="youtube"></a></li>
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_insta.svg" alt="instagram"></a></li>
+            <li><a class="d-flex" href="#"><img style="width: 20px; height: 20px; padding: 4px;"
+                  src="./assets/img/sns_twitter.png" alt="twitter"></a></li>
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_facebook.svg" alt="facebook"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script type="module" src="./assets/js/themeSearch.js"></script>
+  <script type="module" src="./assets/js/main.js?v=1"></script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+@import './common.css';
+
+.mainContentsArea {
+  padding-top: 11rem;
+}
+
+/* visual */
+.visualArea {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 11rem);
+  background: url(../img/intro_visual.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.visualTitle {
+  font-family: 'Nanum Myeongjo' !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5em;
+  line-height: 1em;
+  letter-spacing: 0.3em;
+}
+
+.visualTitle>span:nth-child(2) {
+  font-size: 0.5em;
+}
+
+/* title */
+.titleArea::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/intro_title_background.jpg) no-repeat;
+  /* background: var(--color-background-beige); */
+  background-size: cover;
+  opacity: 0.1;
+  /* opacity: 1; */
+  content: '';
+}
+
+.titleArea {
+  position: relative;
+}
+
+.titleContents {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  width: 100%;
+  padding: 8em 0;
+}
+
+.titleImg {
+  width: 35%;
+  height: 70rem;
+}
+
+.titleImg>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 8em 0;
+}
+
+.titleText>h3 {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.titleText>p {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.titleText>span {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/* theme motif */
+.themeMotifArea {
+  background: var(--color-background-beige);
+}
+
+.motifTitle {
+  display: flex;
+  position: sticky;
+  top: 11rem;
+  flex-direction: column;
+  width: 40%;
+  height: 54rem;
+  padding: 12.8rem 0;
+}
+
+.motifTitle>p {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.motifTitle>span {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.motifTitle>span:nth-child(2) {
+  margin-top: 4em;
+}
+
+.motifContents {
+  width: 60%;
+  padding-top: 6.8rem;
+}
+
+.motifContents>ul {
+  padding-bottom: 12.8rem;
+}
+
+.motifContents>ul>li {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.motifContents>ul>li>img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  margin-top: 6rem;
+}
+
+
+.motifContents>ul>li>p {
+  font-family: 'Nanum Myeongjo' !important;
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+  font-size: 1.5em;
+  line-height: 1em;
+  color: #fff;
+}
+
+@media all and (max-width: 1199px) {
+
+  /* title */
+  .titleContents {
+    gap: 3rem;
+  }
+
+  /* theme motif */
+  .motifTitle {
+    height: 61rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+
+  /* title */
+  .titleContents {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+  }
+
+  .titleImg,
+  .titleText {
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  .titleImg {
+    padding-bottom: 4em;
+  }
+
+  .titleText {
+    padding: 4em 0;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  /* visual */
+  .visualArea {
+    font-size: 0.8em;
+  }
+
+  /* theme motif */
+  .motifTitle {
+    height: 55rem;
+    font-size: 0.8em;
+  }
+
+  .motifContents {
+    font-size: 0.8em;
+  }
+
+  .motifContents>ul>li>img {
+    height: 25rem;
+  }
+
+  .motifContents>ul>li>p {
+    top: 5rem;
+    right: 1rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .mainContentsArea {
+    padding-top: 8rem;
+  }
+
+  /* visual */
+  .visualArea {
+    height: calc(100vh - 8rem);
+    font-size: 0.65em;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  /* title */
+  .titleImg,
+  .titleText {
+    max-width: 54rem;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  .titleImg {
+    height: 50rem;
+  }
+
+  .titleText {
+    font-size: 0.8em;
+  }
+
+  /* theme motif */
+  .motifTitle {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    top: 0;
+    height: auto;
+    padding: 4rem 7.5px 4rem;
+    font-size: 0.8em;
+  }
+
+  .motifContents {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .motifContents>ul {
+    padding-bottom: 8rem;
+  }
+
+  .motifContents>ul>li>img {
+    height: 40rem;
+    margin-top: 4rem;
+  }
+}
+
+@media all and (max-width: 425px) {
+
+  /* visual */
+  .visualArea {
+    font-size: 0.45em;
+  }
+
+  /* title */
+  .titleImg {
+    height: 40rem;
+  }
+
+  .titleText {
+    font-size: 0.65em;
+  }
+
+  /* theme motif */
+  .motifTitle {
+    padding: 4rem 7.5px 2rem;
+    font-size: 0.65em;
+  }
+
+  .motifContents>ul {
+    padding-bottom: 4rem;
+  }
+
+  .motifContents>ul>li>p {
+    top: 3rem;
+    right: 1rem;
+  }
+
+  .motifContents>ul>li>img {
+    margin-top: 2rem;
+  }
+}

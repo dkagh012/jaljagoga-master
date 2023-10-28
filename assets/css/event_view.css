@@ -1,0 +1,222 @@
+@import './common.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.mainContentsArea {
+  padding-top: 11rem;
+  padding-bottom: 6em;
+}
+
+.title {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.titleLabel {
+  margin-bottom: 2.5rem;
+}
+
+.titleLabel>span {
+  padding: 0.2rem 0.8rem;
+  border: 1px solid #111;
+  font-size: 1.3rem;
+}
+
+.titleTag {
+  background: #111;
+  color: #fff;
+  font-weight: 100;
+}
+
+.titleText {
+  position: relative;
+  padding-right: 13%;
+  padding-bottom: 4rem;
+  font-size: 4.2rem;
+  font-weight: 300;
+  line-height: 5rem;
+  letter-spacing: -0.025em;
+  border-bottom: 1px solid #111;
+}
+
+.titleDate {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.visualImg {
+  width: 100%;
+}
+
+.visualImg>img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  margin-bottom: 6rem;
+}
+
+.infoTable table {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  width: 100%;
+  border-collapse: collapse;
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.infoTable table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.infoTable table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.infoTable table tbody tr th {
+  position: relative;
+  height: 9.8rem;
+  padding: 1.5rem 0 4.3rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: top;
+}
+
+.infoTable table tbody tr th::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+  content: '';
+}
+
+.infoTable table tbody tr td {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  height: 9.8rem;
+  padding: 1.5rem 0 4.3rem 4rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.infoTable table tbody tr td::before {
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  right: 0;
+  height: 1px;
+  background: #000;
+  content: '';
+}
+
+.infoTable table tbody tr td p {
+  margin-bottom: 1rem;
+}
+
+.infoTable table tbody tr td p:last-child {
+  margin-bottom: 0;
+}
+
+.listBtn {
+  margin-top: 7.8rem;
+  text-align: center;
+}
+
+.listBtn a {
+  font-size: 1.6rem;
+  min-width: 24rem;
+  height: 5.6rem;
+  line-height: 5.6rem;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  padding: 0 4rem;
+  background-color: #111;
+  font-size: 1.8rem;
+  min-width: 24rem;
+  height: 5.6rem;
+  line-height: 5.8rem;
+  color: #141414;
+  text-align: center;
+  vertical-align: top;
+}
+
+.listBtn a span {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  transition: color .25s ease-out;
+  color: #fff;
+}
+
+@media all and (max-width: 768px) {
+  .mainContentsArea {
+    padding-top: 8rem;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .titleText h2 {
+    font-size: 2.4rem;
+  }
+
+  .visualImg>img {
+    height: 30rem;
+  }
+}

@@ -1,0 +1,295 @@
+@import './common.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.mainContentsArea {
+  padding-top: 11rem;
+}
+
+.visualArea {
+  padding: 8rem 0;
+  position: relative;
+  /* height: 350px; */
+}
+
+/* .visualArea::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: no-repeat center url(../img/visual4.jpeg);
+  background-size: cover;
+  height: 35rem;
+  opacity: 0.6;
+} */
+
+.visualArea>.container,
+.visualArea>.container>.row {
+  height: 100%;
+}
+
+.visualTitle {
+  font-family: 'Nanum Myeongjo' !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2em;
+  line-height: 1em;
+  color: #222;
+  font-weight: 100;
+  z-index: 10;
+}
+
+.topArea {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #000;
+  background: #F4F4F4;
+  padding: 2rem 2.4rem;
+}
+
+.topTitle {
+  display: flex;
+  width: 100%;
+}
+
+.topTitle>span:nth-child(1) {
+  width: 15%;
+  font-weight: 700;
+}
+
+.topTitle>span:nth-child(2) {
+  width: 85%;
+}
+
+.topUser {
+  display: flex;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.topUser>span:nth-child(1) {
+  width: 25%;
+  font-weight: 700;
+}
+
+.topUser>span:nth-child(2) {
+  width: 75%;
+}
+
+.topView,
+.TopDate {
+  display: flex;
+  width: 20%;
+  margin-top: 2rem;
+}
+
+.topView>span:nth-child(1),
+.TopDate>span:nth-child(1) {
+  width: 30%;
+  font-weight: 700;
+  text-align: left;
+}
+
+.topView>span:nth-child(2),
+.TopDate>span:nth-child(2) {
+  width: 70%;
+  text-align: left;
+}
+
+.topInfo {
+  display: flex;
+  padding: 1rem 2.4rem;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.centerArea {
+  padding: 3rem 2.4rem;
+  border-bottom: 1px solid #111;
+}
+
+.bottomArea>ul>li {
+  padding: 1rem 2.4rem;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.bottomArea>ul>li>a>span {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.bottomArea>ul>li>a>span:nth-child(1),
+.bottomArea>ul>li>a>span:nth-child(2) {
+  font-weight: 700;
+}
+
+.bottomArea>ul>li>a>span:nth-child(3) {
+  margin-left: 2rem;
+}
+
+.btnArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.btnArea>div>button {
+  width: 7rem;
+  height: 3.5rem;
+  padding: 0;
+  border: 0;
+}
+
+.btnArea>div>button>a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 3.3rem;
+}
+
+.leftSide>button {
+  color: #fff;
+  background: var(--color-green);
+}
+
+.rightSide>button:nth-child(1) {
+  color: #fff;
+  background: var(--color-blue);
+}
+
+.rightSide>button:nth-child(2) {
+  margin-left: 0.5rem;
+  color: #fff;
+  background: var(--color-red);
+}
+
+@media all and (max-width: 991px) {
+  .topUser {
+    width: 40%;
+  }
+
+  .topView,
+  .TopDate {
+    width: 30%;
+  }
+
+  .topView>span:nth-child(1),
+  .TopDate>span:nth-child(1) {
+    width: 40%;
+  }
+
+  .TopDate>span:nth-child(1) {
+    text-align: right;
+  }
+
+  .topView>span:nth-child(2),
+  .TopDate>span:nth-child(2) {
+    width: 60%;
+  }
+
+  .TopDate>span:nth-child(2) {
+    text-align: right;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .mainContentsArea {
+    padding-top: 7rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .topArea,
+  .topInfo {
+    font-size: 0.8em;
+  }
+
+  .TopDate>span:nth-child(1) {
+    width: 30%;
+  }
+
+  .TopDate>span:nth-child(2) {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .topUser {
+    width: 60%;
+  }
+
+  .topUser>span:nth-child(1) {
+    width: 47px;
+  }
+
+  .topUser>span:nth-child(2) {
+    width: auto;
+  }
+
+  .topView {
+    width: 40%;
+  }
+
+  .topView>span:nth-child(1) {
+    width: 47px;
+  }
+
+  .topView>span:nth-child(2) {
+    width: auto;
+  }
+
+  .TopDate {
+    width: 100%;
+  }
+
+  .TopDate>span:nth-child(1) {
+    width: 47px;
+    text-align: left;
+  }
+
+  .TopDate>span:nth-child(2) {
+    width: auto;
+    text-align: left;
+  }
+}

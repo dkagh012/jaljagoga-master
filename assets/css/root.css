@@ -1,0 +1,22 @@
+:root {
+  /* color */
+  --borderColor1: #e6e6e6;
+  --color-white: #fff;
+  --color-black: #333;
+  --color-gray: #666;
+  --color-darkBlack: #000;
+  --color-red: #dd0011;
+  --color-blue: #118de3;
+  --color-green: #1ba254;
+  --color-logo: #007BC7;
+  --color-hover: #f8faff;
+  --color-star: rgb(253, 131, 9);
+
+  --color-background-gray: #717171;
+  --color-background-beige: #f5f5f5;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}

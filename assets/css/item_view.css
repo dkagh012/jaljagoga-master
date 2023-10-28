@@ -1,0 +1,568 @@
+@import 'reset.css';
+@import 'root.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.visualArea {
+  width: 100%;
+  padding-top: 11rem;
+  overflow: hidden;
+}
+
+.visualSwiper {
+  position: relative;
+}
+
+.visualTitleImg {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.visualInfo {
+  position: absolute;
+  left: 50%;
+  bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  transform: translate(-50%, 0);
+  background: rgba(0, 0, 0, .85);
+  z-index: 10;
+}
+
+.visualInfo>p,
+.visualInfo>p>small {
+  color: #fff;
+}
+
+.visualInfo>p:nth-child(1) {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 100;
+  padding: 1em;
+}
+
+.visualInfo>p:nth-child(2) {
+  text-align: center;
+  padding: 1em 5em;
+  height: 100%;
+  border-left: 2px solid rgba(200, 200, 200, .4);
+}
+
+.visualInfo>p>small {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.visualPrev,
+.visualNext {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: .8;
+  transform: translate(0, -50%);
+  z-index: 10;
+  border: 0;
+}
+
+.visualPrev {
+  left: 0;
+  background: url(../img/prev.svg);
+}
+
+.visualNext {
+  right: 0;
+  background: url(../img/next.svg);
+}
+
+.roomsArea {
+  position: relative;
+  height: 700px;
+  margin-top: 8em;
+  padding-top: 12rem;
+}
+
+.roomsArea::before {
+  content: '';
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  height: 700px;
+  z-index: -1;
+}
+
+.roomsTitle {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 3.5rem;
+}
+
+.roomsTitle:after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background: #000;
+  margin-top: 30px;
+}
+
+.roomsDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.roomsDesc span,
+.roomsDesc span i {
+  color: #333;
+}
+
+.roomsDesc span i {
+  margin-right: 5px;
+}
+
+.imgArea {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  width: 60%;
+  height: 55rem;
+}
+
+.roomsSwiper {
+  height: 100%;
+}
+
+.roomsTitleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--borderColor1);
+}
+
+.roomsNavigation {
+  position: relative;
+}
+
+.roomsPrev,
+.roomsNext {
+  position: absolute;
+  top: 15rem;
+  width: 70px;
+  height: 70px;
+  z-index: 1000;
+  border: 0;
+  scale: 0.8;
+}
+
+.roomsPrev {
+  left: 0;
+  background: url(../img/prev_next.png) no-repeat 70px 140px;
+  background-position: 0 0;
+}
+
+.roomsNext {
+  left: 70px;
+  background: url(../img/prev_next.png) no-repeat 70px 140px;
+  background-position: 0 -70px;
+}
+
+.contentArea {
+  margin-top: 8em;
+}
+
+.contentText .title>p {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.contentText .title>h3 {
+  margin-top: 1em;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.contentText .title::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: #000;
+  margin: 25px auto 0;
+}
+
+.text1,
+.text2 {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 35px;
+  margin: 1em 30%;
+  word-break: keep-all;
+}
+
+.mapArea {
+  margin-top: 8em;
+}
+
+.map {
+  position: relative;
+}
+
+.map>iframe {
+  border: 1px solid var(--borderColor1);
+  border-left: 0;
+  border-right: 0;
+}
+
+.mapTitle {
+  position: absolute;
+  top: 1rem;
+  left: 1.7rem;
+  padding: 4rem;
+  background: #fff;
+}
+
+.mapTitle .title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.mapTitle .info {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.mapTitle .tel,
+.mapTitle .site {
+  color: #939393;
+}
+
+.mapTitle .sns ul {
+  margin-top: 10px;
+  gap: 1rem;
+}
+
+/* facility */
+.facilityArea {
+  margin-top: 8em;
+}
+
+.facilityArea .title {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.facility .info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 100%;
+  border-top: 4px solid #000;
+}
+
+.facility .info li {
+  display: flex;
+  align-items: center;
+  width: 32%;
+  padding: 1.3em 0;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.mapMarker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  line-height: 16px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+}
+
+.facility .info .contents {
+  padding-left: 1em;
+}
+
+.facility .info .contents p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.facility .info .contents span {
+  display: block;
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 0.3em;
+  font-weight: 200;
+}
+
+.noticeArea * {
+  color: #fff;
+}
+
+.noticeArea {
+  margin-top: 8em;
+  padding: 10rem;
+  background: #000;
+}
+
+.noticeTitle {
+  font-family: 'Nanum Myeongjo' !important;
+  font-size: 36px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.noticeText {
+  line-height: 36px;
+}
+
+.noticeArea .title {
+  margin-top: 2em;
+}
+
+.noticeArea .detail {
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+
+.noticeDetailTitle {
+  margin-top: 2em;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+
+
+@media all and (max-width: 1440px) {
+
+  .text1,
+  .text2 {
+    margin: 1em 20%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+
+  .text1,
+  .text2 {
+    margin: 1em 10%;
+  }
+
+  .noticeArea .col-9 {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .imgArea {
+    height: 40rem;
+  }
+
+  .roomsArea {
+    margin-top: 4em;
+    height: auto;
+  }
+
+  .roomsArea::before {
+    height: 450px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .roomsNavigation {
+    position: absolute;
+  }
+
+  .roomsPrev,
+  .roomsNext {
+    top: 7.1rem;
+    scale: 0.4;
+  }
+
+  .roomsPrev {
+    left: 75px;
+  }
+
+  .roomsNext {
+    left: 105px;
+  }
+
+  .text1,
+  .text2 {
+    margin: 1em 15%;
+  }
+
+  .facility .info li {
+    width: 49%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .visualTitleImg {
+    height: 350px;
+  }
+
+  .roomsArea::before {
+    width: 100%;
+  }
+
+  .imgArea {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    top: auto;
+    right: auto;
+    transform: initial;
+  }
+
+  .roomsDesc {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    margin-bottom: 30px;
+  }
+
+  .roomsTitleImg {
+    height: 350px;
+  }
+
+  .roomsArea>.container>.row {
+    position: relative;
+  }
+
+  .roomsNavigation {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 20px;
+    left: 0;
+  }
+
+  .roomsPrev {
+    top: 0;
+    left: auto;
+    right: 50px;
+    opacity: 0.9;
+    scale: 0.6;
+  }
+
+  .roomsNext {
+    top: 0;
+    left: auto;
+    right: 0;
+    opacity: 0.9;
+    scale: 0.6;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .visualInfo {
+    width: 100%;
+    position: relative;
+    transform: initial;
+    background: #000;
+    left: auto;
+  }
+
+  .text1,
+  .text2 {
+    margin: 1em 30px;
+  }
+
+  .text1 br,
+  .text2 br {
+    display: none;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .visualInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .visualInfo>p:nth-child(2) {
+    border-left: 0;
+  }
+
+  .noticeArea {
+    padding: 10rem 0;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .facility .info {
+    gap: 0;
+  }
+
+  .facility .info li {
+    padding-left: 10%;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .visualInfo>p:nth-child(1) {
+    font-size: 20px;
+  }
+}

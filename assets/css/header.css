@@ -1,0 +1,151 @@
+a:hover {
+  color: initial;
+}
+
+.hide {
+  display: none;
+}
+
+/* header */
+.headerArea {
+  background-color: #fff;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.headerContainer {
+  position: relative;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.headerUl {
+  height: 11rem;
+  gap: 8rem;
+}
+
+.headerUl a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.3em;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
+}
+
+.logo {
+  height: 100%;
+}
+
+.hamburgerMenuBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translate(0, -50%);
+  width: 32px;
+  height: 32px;
+}
+
+.hamburgerMenuBtn button,
+.hamburgerMenuBtn button i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.stopScroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sideMenuArea .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 320px);
+  height: 100vh;
+  background: rgba(0, 0, 0, .6);
+  z-index: 1000;
+}
+
+.sideMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  padding: 40px 0 0 40px;
+  background: #fff;
+  border: 1px solid var(--borderColor1);
+}
+
+.sideMenu ul {
+  position: relative;
+  height: calc(100vh - 40px);
+  overflow: scroll;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: #fff url(../img/close_btn.png) no-repeat 50%;
+  border: 0;
+}
+
+.sideMenu .title {
+  display: block;
+  margin: 10px 40px 0 0;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  font-weight: 700;
+  color: #000;
+}
+
+.sideMenu .title:nth-child(2) {
+  margin: 20px 40px 0 0;
+  border-top: 1px solid var(--borderColor1);
+}
+
+.sideMenu .item {
+  display: block;
+  margin-right: 20px;
+  padding: 10px 10px;
+  font-size: 1em;
+  line-height: 1em;
+  transition: all 0.3s;
+}
+
+.sideMenu .item:hover {
+  background: var(--borderColor1);
+  border-radius: 10px 20px 20px 10px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 991px) {
+  .headerUl {
+    gap: 3rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .headerUl {
+    height: 8rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item:nth-child(3) {
+    display: block;
+  }
+
+  .hamburgerMenuBtn {
+    display: block;
+  }
+}

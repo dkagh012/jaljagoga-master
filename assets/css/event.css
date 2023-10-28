@@ -1,0 +1,238 @@
+@import 'common.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+.mainArea {
+  padding-top: 11rem;
+}
+
+/* event */
+.eventArea {
+  padding-top: 7em;
+}
+
+.title {
+  margin-bottom: 4em;
+}
+
+.title p {
+  font-family: 'Nanum Myeongjo' !important;
+  font: var(--color-black);
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
+.eventPost {
+  padding-top: 10rem;
+}
+
+.eventPost:nth-child(2) {
+  border-top: 1px solid var(--borderColor1);
+}
+
+.eventPost>a {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.eventPicture {
+  width: 50%;
+  height: 300px;
+}
+
+.eventPicture>img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--borderColor1);
+  object-fit: cover;
+}
+
+.eventContent {
+  padding-left: 6rem;
+}
+
+.contentTitle {
+  height: 7.2rem;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+}
+
+.contentDesc {
+  overflow: hidden;
+  max-height: 4.8rem;
+  margin-top: 1.7rem;
+  color: #262626;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.contentDate {
+  margin-top: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #262626;
+}
+
+.contentTags {
+  margin-top: 2.3rem;
+}
+
+.contentTags>span {
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #111;
+  font-size: 1.2rem;
+}
+
+.titleTag {
+  background: #111;
+  color: #fff;
+  font-weight: 100;
+}
+
+.dateTag.closeTag {
+  background: #111;
+  color: #fff;
+  font-weight: 100;
+}
+
+/* paging */
+.paging {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2em 0 4em;
+}
+
+.paging,
+.paging>a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.paging>a.active,
+.paging>a:hover {
+  color: #000;
+}
+
+/* responsive */
+@media all and (max-width:991px) {
+  .eventPost>a {
+    flex-wrap: wrap;
+  }
+
+  .eventPicture {
+    width: 100%;
+  }
+
+  .eventPost>a {
+    justify-content: center;
+  }
+
+  .eventContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contentTitle {
+    margin-top: 2.5rem;
+    height: 4rem;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+  }
+
+  .contentDesc {
+    font-size: 1.3rem;
+  }
+
+  .contentDate {
+    font-size: 1.4rem;
+  }
+
+  .eventContent {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 3rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+}
+
+@media all and (max-width:768px) {
+  .mainArea {
+    padding-top: 4rem;
+  }
+
+  .contentTitle {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .contentDesc {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+
+  .contentDate {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .contentTags {
+    margin-top: 0.7rem;
+  }
+}
+
+@media all and (max-width:425px) {
+  .eventContent {
+    position: relative;
+    justify-content: flex-start;
+    height: auto;
+  }
+}

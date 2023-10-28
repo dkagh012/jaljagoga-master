@@ -1,0 +1,204 @@
+@import './common.css';
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url();
+  src: local('Noto Sans Light'), local('NotoSans-Light'), url(../fonts/NotoSans-Light.eot);
+  src: url(../fonts/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Light.woff2) format('woff2'),
+    url(../fonts/NotoSans-Light.woff) format('woff');
+  ;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(../fonts/NotoSans-Regular.eot);
+  src: url(../fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(../fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(../fonts/NotoSans-Medium.eot);
+  src: url(../fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(../fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(../fonts/NotoSans-Bold.eot);
+  src: url(../fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(../fonts/NotoSans-Bold.woff) format('woff');
+}
+
+
+.mainContentsArea {
+  padding: 11rem 0 8rem;
+}
+
+/* title */
+.EditorTitle {
+  margin: 4rem 0 4rem;
+  font-family: 'Nanum Myeongjo' !important;
+  font: var(--color-black);
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
+/* ck editor */
+.contentTitle {
+  border-bottom: 1px solid var(--borderColor1);
+  margin-bottom: 4rem;
+}
+
+.contentTitle>input {
+  width: 100%;
+  border: 0;
+  padding-bottom: 2rem;
+  font-size: 3.2rem;
+  font-weight: 200;
+  outline: none;
+}
+
+/* user info */
+.userInfoArea {
+  padding: 0;
+}
+
+.userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin: 0 0 4rem;
+}
+
+.userInfo>div {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0.5rem 1rem;
+  border: 0;
+  border-bottom: 1px solid var(--borderColor1);
+}
+
+.userName {
+  width: 24%;
+}
+
+.userName label {
+  width: 4rem;
+}
+
+.userName input {
+  width: calc(100% - 4rem);
+}
+
+.userPhoneNum {
+  width: 40%;
+}
+
+.userPhoneNum label {
+  width: 5rem;
+}
+
+.userPhoneNum input {
+  width: calc(100% - 10rem);
+}
+
+.hotelInfo {
+  width: 32%;
+}
+
+.hotelInfo label {
+  width: 7rem;
+}
+
+.hotelInfo input {
+  width: calc(100% - 12rem);
+}
+
+.userInfo input {
+  border: 0;
+  outline: none;
+}
+
+.CertifiedBtn,
+.hotelRegistrationBtn {
+  border: 1px solid #888;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  width: 5rem;
+  height: 100%;
+}
+
+
+/* Registration, cancel button */
+.btnArea>.container {
+  position: relative;
+}
+
+.btnList>button {
+  top: -27px;
+  width: 10rem;
+  height: 3.5rem;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  font-size: 1em;
+  line-height: 3.3rem;
+  font-weight: 300;
+  border: 1px solid var(--borderColor1);
+}
+
+.btnList>button>a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.btnList>button:nth-child(1) {
+  position: absolute;
+  top: 2rem;
+  left: calc(50% - 60px);
+  transform: translate(-50%, 0);
+  background: var(--color-green);
+}
+
+.btnList>button:nth-child(2) {
+  position: absolute;
+  top: 2rem;
+  left: calc(50% + 60px);
+  transform: translate(-50%, 0);
+  background: var(--color-red);
+}
+
+@media all and (max-width:768px) {
+  .mainContentsArea {
+    padding-top: 7rem;
+  }
+
+  /* user info */
+
+  .userName,
+  .userPhoneNum,
+  .hotelInfo {
+    width: 100%;
+  }
+
+  .userPhoneNum,
+  .hotelInfo {
+    margin-top: 0.5rem;
+  }
+}

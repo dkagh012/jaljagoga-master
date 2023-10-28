@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/xeicon.min.css">
+  <link rel="stylesheet" href="./assets/nanummyeongjo.css">
+  <link rel="stylesheet" href="./assets/css/swiper.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/find_stay.css?v=4">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>잘자고가</title>
+  <meta name="subject" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta name="keywords" content="잘자고가,고택,숙박,사무실,예약,고택예약" />
+  <meta name="description" content="잘자고가는 고택을 사무실 혹은 숙박시설로 이용하고자 하는 고객들을 위해 다양한 고택의 정보를 제공합니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta property="og:site_name" content="잘자고가 | 고택을 큐레이션하다!" />
+  <meta property="og:description" content="잘자고가는 고택을 사무실 혹은 숙박시설로 이용하고자 하는 고객들을 위해 다양한 고택의 정보를 제공합니다." />
+  <meta property="og:image" content="" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./assets/img/favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- header -->
+  <div class="headerArea fixed-top">
+    <div class="headerContainer container-fluid p-0">
+      <div class="container">
+        <div class="row">
+          <header>
+            <ul class="headerUl navbar-nav flex-row justify-content-center p-3">
+              <li class="nav-item"><a href="./introduction.html">소개</a></li>
+              <li class="nav-item"><a href="#">고택 소개</a></li>
+              <li class="nav-item">
+                <a href="./index.html">
+                  <img class="logo" src="./assets/img/logo.png" alt="logo">
+                </a>
+              </li>
+              <li class="nav-item"><a href="event.html">이벤트</a></li>
+              <li class="nav-item"><a href="review.html">이용후기</a></li>
+            </ul>
+            <div class="hamburgerMenuBtn">
+              <button><i class="xi-bars xi-2x" style="color: #000;"></i></button>
+            </div>
+            <div class="sideMenuArea hide">
+              <div class="wrapper jsWrapper"></div>
+              <div class="sideMenu">
+                <ul>
+                  <button class="closeBtn hamburgerCloseBtn"></button>
+                  <li class="title"><a href="./introduction.html">소개</a></li>
+                  <li class="title"><a href="./find_stay.html">고택소개</a></li>
+                  <li class="title"><a href="event.html">이벤트</a></li>
+                  <li class="title"><a href="./review.html">이용후기</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- search bar -->
+  <div class="searchContainer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="searchArea">
+            <div class="FilterArea">
+              <div class="area d-flex justify-content-center align-items-center">
+                <span>지역</span>
+                <button class="detailOpenBtn areaText">전국</button>
+                <div class="AreaDetail detailArea hide">
+                  <div class="detailTitle">
+                    <p>지역</p>
+                    <button class="detailCloseBtn"></button>
+                  </div>
+                  <div class="areaValue">
+                    <ul>
+                      <li class="col-4"><button class="selectBtn areaSelect active">전국</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">서울</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">부산</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">인천</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">대전</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">울산</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">광주</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">대구</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">강원</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">경기</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">경남</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">경북</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">전남</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">전북</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">충남</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">충북</button></li>
+                      <li class="col-4"><button class="selectBtn areaSelect">제주</button></li>
+                    </ul>
+                    <button class="areaSelectBtn">적용</button>
+                  </div>
+                </div>
+              </div>
+              <div class="people d-flex justify-content-center align-items-center">
+                <span>인원</span>
+                <button class="detailOpenBtn peopleText">선택</button>
+                <div class="peopleDetail detailArea hide">
+                  <div class="detailTitle">
+                    <p>인원</p>
+                    <button class="detailCloseBtn"></button>
+                  </div>
+                  <div class="peopleValue areaValue">
+                    <ul>
+                      <li class="col-12">
+                        <button class="peopleMinusBtn">-</button><span><span
+                            class="peopleDisplay">1</span><span>명</span></span><button class="peoplePlusBtn">+</button>
+                      </li>
+                    </ul>
+                    <button class="peopleSelectBtn">적용</button>
+                  </div>
+                </div>
+              </div>
+              <div class="price d-flex justify-content-center align-items-center">
+                <span>가격</span>
+                <button class="detailOpenBtn priceText">선택</button>
+                <div class="priceDetail detailArea hide">
+                  <div class="detailTitle">
+                    <p>가격</p>
+                    <button class="detailCloseBtn"></button>
+                  </div>
+                  <div class="priceValue areaValue">
+                    <ul class="justify-content-between align-items-center">
+                      <select class="priceMinArea">
+                        <option>0원</option>
+                        <option>100,000원</option>
+                        <option>200,000원</option>
+                        <option>300,000원</option>
+                        <option>400,000원</option>
+                        <option>500,000원</option>
+                        <option>600,000원</option>
+                        <option>700,000원</option>
+                        <option>800,000원</option>
+                        <option>900,000원</option>
+                      </select>
+                      <span>~</span>
+                      <select class="priceMaxArea">
+                        <option>100,000원</option>
+                        <option>200,000원</option>
+                        <option>300,000원</option>
+                        <option>400,000원</option>
+                        <option>500,000원</option>
+                        <option>600,000원</option>
+                        <option>700,000원</option>
+                        <option>800,000원</option>
+                        <option>900,000원</option>
+                        <option>1,000,000원</option>
+                      </select>
+                    </ul>
+                    <button class="priceSelectBtn">적용</button>
+                  </div>
+                </div>
+              </div>
+              <div class="theme d-flex justify-content-center align-items-center">
+                <span>검색</span>
+                <input type="text" class="themeTextInput" placeholder="검색어를 입력해주세요">
+                <div class="themeDetail detailArea hide">
+                  <div class="detailTitle">
+                    <p>테마</p>
+                    <button class="detailCloseBtn"></button>
+                  </div>
+                  <div class="areaValue">
+                    <ul>
+                      <li class="col-4"><button class="selectBtn themeSelect active">전체</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">전통</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">자연</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">도심</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">독채</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">노천탕</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">가족</button></li>
+                      <li class="col-4"><button class="selectBtn themeSelect">혼자여행</button></li>
+                    </ul>
+                    <button class="themeSelectBtn">적용</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="searchBtnArea">
+              <button>검색</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- item list -->
+  <div class="itemList">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="listArea">
+            <div class="itemArea">
+              <a class="itemTitleImg" href="./item_view.html"><img src="./assets/img/list/고담청사/2.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="./item_view.html">죽헌고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">하늘에</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">차암고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">송곡고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="listArea">
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/2.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">죽헌고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">하늘에</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">차암고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">송곡고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="listArea">
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/2.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">죽헌고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">하늘에</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">차암고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">송곡고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="listArea">
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/2.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">죽헌고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">하늘에</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">차암고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">송곡고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="listArea">
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/2.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">죽헌고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/4.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">하늘에</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/6.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">차암고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+            <div class="itemArea">
+              <a class="itemTitleImg" href="#"><img src="./assets/img/list/고담청사/7.jpg" alt="고택"></a>
+              <div class="viewInfo">
+                <h3 class="name"><a href="#">송곡고택</a></h3>
+                <ul class="tagList">
+                  <span><a href="#">#전통</a></span>
+                  <span><a href="#">#자연</a></span>
+                  <span><a href="#">#가족</a></span>
+                  <span><a href="#">#다이닝</a></span>
+                  <span><a href="#">#휴식</a></span>
+                </ul>
+                <p class="info">성곡동 민속촌길 190 / 054-823-9001</p>
+                <p class="itemPrice">₩200,000 ~ ₩300,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="paging">
+      <a href="#"><i class="xi-angle-left"></i></a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#"><i class="xi-angle-right"></i></a>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <div class="footerContainer">
+    <div class="container">
+      <footer class="row">
+        <div class="footerLogo col-md-2 col-sm-12">
+          <a class="d-flex" href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footerCenterArea col-md-8 col-sm-12">
+          <ul class="d-flex gap-5">
+            <li><a href="#">잘자고가 소개</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <ul class="d-flex gap-3">
+            <li>잘자고가</li>
+            <li>경상북도 안동시 000(0층)</li>
+            <li>고객센터 054-841-0000</li>
+          </ul>
+          <p>© JALJAGOGA. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="snsArea col-md-2 d-flex justify-content-end col-sm-12">
+          <ul class="d-flex gap-3">
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_youtube.svg" alt="youtube"></a></li>
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_insta.svg" alt="instagram"></a></li>
+            <li><a class="d-flex" href="#"><img style="width: 20px; height: 20px; padding: 4px;"
+                  src="./assets/img/sns_twitter.png" alt="twitter"></a></li>
+            <li><a class="d-flex" href="#"><img src="./assets/img/sns_facebook.svg" alt="facebook"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/search.js"></script>
+</body>
+
+</html>

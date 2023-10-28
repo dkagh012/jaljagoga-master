@@ -1,0 +1,80 @@
+.filter_category {
+  position: relative;
+}
+
+.filter_category ul {
+  gap: 5rem;
+  margin: 2rem 0;
+  padding: 0 6rem;
+  border: 1px solid var(--borderColor1);
+  border-radius: 1.5rem;
+  overflow-x: scroll;
+}
+
+.filter_category ul::-webkit-scrollbar {
+  display: none;
+}
+
+.searchSlideBtnLeft {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 9px;
+  background: transparent;
+}
+
+.searchSlideBtnRight {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 8px;
+  background: transparent;
+}
+
+.searchSlideBtn {
+  background: #fff;
+  width: 5rem;
+  height: 6.2rem;
+  padding: 0;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+}
+
+.searchPrev,
+.searchNext {
+  font-size: 2em;
+  line-height: 2em;
+  color: var(--color-background-gray);
+}
+
+.filter_category ul li a {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  line-height: 32px;
+  color: var(--color-gary2);
+  transition: all 0.3s;
+}
+
+.filter_category ul li a:hover {
+  font-weight: var(--font-weight-bold);
+}
+
+.searchBtn {
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border: 1px solid var(--borderColor1);
+  border-radius: 1.5rem;
+}
+
+.searchBtn button {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.searchBtn i {
+  height: 32px;
+  line-height: 32px;
+}
