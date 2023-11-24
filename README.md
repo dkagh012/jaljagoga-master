@@ -15,7 +15,7 @@
 
 ### ⚙️ 개발 환경
 
-- `Visual Studio`
+- `Visual Studio`.
 
 ### 웹 페이지
 
